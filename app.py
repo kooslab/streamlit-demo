@@ -57,8 +57,8 @@ with col1:
     
     df = pd.DataFrame({
         'Month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-        'Sales': np.random.randint(50, 200, 6),
-        'Profit': np.random.randint(20, 100, 6)
+        'Sales': [120, 150, 180, 165, 190, 175],
+        'Profit': [45, 65, 85, 70, 95, 80]
     })
     
     fig = px.bar(df, x='Month', y=['Sales', 'Profit'], 
